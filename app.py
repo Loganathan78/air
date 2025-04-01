@@ -56,7 +56,7 @@ st.markdown(
     }
     </style>
     <div class="footer">
-        This website was created by Name 1 and Name 2
+        This website was created by Loganathan S and Akhash S
     </div>
     """, 
     unsafe_allow_html=True
