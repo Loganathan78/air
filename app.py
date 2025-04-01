@@ -42,9 +42,11 @@ if st.button('Predict AQI'):
     
     st.write(f"AQI Category: {category}")
 
-# Display the authorship message at the bottom of the page
+# Display the authorship message at the bottom of the page with larger text and bold names
 st.markdown("""
     <div style="position: fixed; bottom: 0; width: 100%; text-align: center; padding: 10px; background-color: #f1f1f1;">
-        <p style="font-size: 12px; color: grey;">This website was created by S. Loganathan and S. Akhash</p>
+        <p style="font-size: 24px; font-weight: bold; color: black;">
+            This website was created by <span style="font-weight: bold; font-size: 26px;">S. Loganathan</span> and <span style="font-weight: bold; font-size: 26px;">S. Akhash</span>
+        </p>
     </div>
 """, unsafe_allow_html=True)
