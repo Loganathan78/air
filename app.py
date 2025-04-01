@@ -43,10 +43,44 @@ if st.button('Predict AQI'):
     st.write(f"AQI Category: {category}")
 
 # Display the authorship message at the bottom of the page with larger text and bold names
-st.markdown("""
-    <div style="position: fixed; bottom: 0; width: 100%; text-align: center; padding: 10px; background-color: #f1f1f1;">
-        <p style="font-size: 24px; font-weight: bold; color: black;">
-            This website was created by <span style="font-weight: bold; font-size: 26px;">S. Loganathan</span> and <span style="font-weight: bold; font-size: 26px;">S. Akhash</span>
-        </p>
-    </div>
-""", unsafe_allow_html=True)
+def add_custom_styles():
+    css_code = """
+    <style>
+    body, .stTextInput, .stSelectbox {
+        color: black !important;
+        font-weight: bold;
+    }
+    .movie-title {
+        color: red;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 5px;
+    }
+    div.stButton > button {
+        background-color: green !important;
+        color: white !important;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 10px;
+        padding: 10px 20px;
+        border: none;
+    }
+.footer {
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 18px;
+        color: black;
+        font-weight: bold;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 8px 15px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    }
+    </style>
+    <div class="footer">This website was created by <b>Loganathan S</b> and <b>Akhash S</b></div>
+    """
+    st.markdown(css_code, unsafe_allow_html=True)
