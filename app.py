@@ -41,3 +41,10 @@ if st.button('Predict AQI'):
         category = "Hazardous 💀"
     
     st.write(f"AQI Category: {category}")
+
+# Display the authorship message at the bottom of the page
+st.markdown("""
+    <div style="position: fixed; bottom: 0; width: 100%; text-align: center; padding: 10px; background-color: #f1f1f1;">
+        <p style="font-size: 12px; color: grey;">This website was created by S. Loganathan and S. Akhash</p>
+    </div>
+""", unsafe_allow_html=True)
